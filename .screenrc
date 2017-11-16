@@ -7,6 +7,9 @@ hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 vbell off
 term "screen-256color"
 
+# Enable mouse scrolling and scroll bar history scrolling
+termcapinfo xterm* ti@:te@
+
 # Always start screen with utf8 enabled. (Alternative method is to run screen with -U parameter)
 defutf8 on
 
