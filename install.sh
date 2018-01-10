@@ -18,7 +18,7 @@ vim +PluginInstall +qall
 echo "vimrc done.\n"
 
 # oh-my-zsh
-wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+git clone https://github.com/robbyrussell/oh-my-zsh ~/.oh-my-zsh
 rm ~/.zshrc
 ln -s ~/.archiexdex.config.d/.zshrc ~/.zshrc
 
