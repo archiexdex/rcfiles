@@ -1,12 +1,13 @@
-.vimrc
-======
+# Install
+```sh
+    chmod a+x install.sh
+	./install.sh
+```
 
-This is the repository for my (kevinptt0323) vimrc.
-
------
-
-Hotkeys:
---------
-	<F9>	Compile and Run
-	<F10>	Compile
-	<F11>	Compile and Run in valgrind
+# Content
+including the following content
+* vimrc
+* screenrc
+* zshrc
+- install oh-my-zsh
+- install rmate

@@ -8,6 +8,9 @@ sudo apt-get install git vim zsh
 # clone whole repository to .jxcode.config.d
 git clone https://github.com/archiexdex/rcfiles.git ~/.archiexdex.config.d
 
+# screenrc
+ln -s ~/.archiexdex.config.d/.screenrc ~/.screenrc
+
 # vimrc
 ln -s ~/.archiexdex.config.d/vimrc ~/.vim
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
