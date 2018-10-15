@@ -3,10 +3,10 @@
 # copy from jxcodetw
 
 # check needed tools
-sudo apt-get install -y git vim zsh
+# sudo apt-get install -y git vim zsh
 
 # clone whole repository to .jxcode.config.d
-git clone https://github.com/archiexdex/rcfiles.git ~/.archiexdex.config.d
+# git clone https://github.com/archiexdex/rcfiles.git ~/.archiexdex.config.d
 mv ~/rcfiles ~/.rcfiles
 
 # screenrc
@@ -24,9 +24,9 @@ rm ~/.zshrc
 ln -s ~/.rcfiles/.zshrc ~/.zshrc
 
 # rmate
-sudo wget -O /usr/local/bin/rmate https://raw.github.com/aurora/rmate/master/rmate
-chmod a+x /usr/local/bin/rmate
+sudo wget -O /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
+sudo chmod a+x /usr/local/bin/rmate
 # rmate example
 # local client: ssh -R <port>:localhost:<port> user@example.com
 # remote client: rmate -p <port> file
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
