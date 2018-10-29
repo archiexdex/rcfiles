@@ -5,7 +5,7 @@ screen -t home
 caption always "%{WK}Screen: %n | %h %=%t %Y/%m/%d %c:%s"
 hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
 vbell off
-term "screen-256color"
+#term "screen-256color"
 
 # Enable mouse scrolling and scroll bar history scrolling
 termcapinfo xterm* ti@:te@

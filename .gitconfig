@@ -1,0 +1,32 @@
+[user]
+	email = kevinptt0323@gmail.com
+	name = Kevin Lin
+[credential]
+	helper = cache --timeout=3600
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	cm = commit
+	recm = commit --amend --no-edit
+	st = status
+	br = branch
+	df = diff
+	dfw = diff --color-words
+	cache = diff --cached
+	dt = difftool
+    mt = mergetool
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+	sm = submodule
+	bl = blame -c
+	unstage = reset HEAD --
+	clear = "!git co -- . && git clean -df"
+[push]
+	default = simple
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[remote]
+	prune = true
