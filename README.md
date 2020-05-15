@@ -1,6 +1,6 @@
 # rcfiles
 
-My rcfiles copy from kevinptt0323:
+My rcfiles fork from kevinptt0323:
 
 - (Keep updating)
     - [zsh](http://www.zsh.org/)
@@ -15,15 +15,8 @@ My rcfiles copy from kevinptt0323:
 Clone files into `$HOME/rcfiles` by default.
 
 ```
-git clone https://github.com/kevinptt0323/rcfiles.git ~/rcfiles
+git clone https://github.com/archiexdex/rcfiles.git ~/rcfiles
 ./rcfiles/run.sh
-```
-
-If you want to change the directory, run this command:
-
-```
-git clone https://github.com/kevinptt0323/rcfiles.git <path-to-rcfiles>
-RC_DIR=<path-to-rcfiles> ./rcfiles/run.sh
 ```
 
 **Note: you have to modify `RC_DIR` to `<path-to-rcfiles>` in `.zshrc`.**
