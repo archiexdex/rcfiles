@@ -13,7 +13,7 @@ EOT
 echo "zshrc done!\n"
 
 # vimrc
-ln -sf $HOME/rcfiles/vimrc $HOME/.vim
+ln -sf $RC_DIR/vimrc $HOME/.vim
 git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 echo "vimrc done!\n"
