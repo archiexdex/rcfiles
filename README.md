@@ -2,13 +2,13 @@
 
 My rcfiles fork from kevinptt0323:
 
-- (Keep updating)
-    - [zsh](http://www.zsh.org/)
-    - [git](https://git-scm.com/)
-    - [tmux](https://github.com/tmux/tmux)
-- (Not maintaining)
-    - [tcsh](https://github.com/tcsh-org/tcsh)
-    - [screen](http://www.gnu.org/software/screen/)
+-   (Keep updating)
+    -   [zsh](http://www.zsh.org/)
+    -   [git](https://git-scm.com/)
+    -   [tmux](https://github.com/tmux/tmux)
+-   (Not maintaining)
+    -   [tcsh](https://github.com/tcsh-org/tcsh)
+    -   [screen](http://www.gnu.org/software/screen/)
 
 ## Installation
 
@@ -16,7 +16,14 @@ Clone files into `$HOME/rcfiles` by default.
 
 ```
 git clone https://github.com/archiexdex/rcfiles.git ~/rcfiles
-./rcfiles/run.sh
+./rcfiles/install
+```
+
+If you want to change the directory, run this command:
+
+```
+git clone https://github.com/archiexdex/rcfiles.git <path-to-rcfiles>
+RC_DIR=<path-to-rcfiles> ./rcfiles/install
 ```
 
 **Note: you have to modify `RC_DIR` to `<path-to-rcfiles>` in `.zshrc`.**
@@ -29,7 +36,11 @@ Add custom commands in `.zshrc`.
 
 Some git aliases.
 
+## ripgrep
+
+Ripgrep
+
 ## tmux
 
-- Bind prefix key to `<C-a>`
-- Mouse enabled
+-   Bind prefix key to `<C-a>`
+-   Mouse enabled

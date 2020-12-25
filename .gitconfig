@@ -1,6 +1,3 @@
-[user]
-	email = rc840327@gmail.com
-	name = archiexdex
 [credential]
 	helper = cache --timeout=3600
 [core]
@@ -11,15 +8,20 @@
 	recm = commit --amend --no-edit
 	st = status
 	br = branch
+	cp = cherry-pick
 	df = diff
+	dfc = diff --color-words=.
 	dfw = diff --color-words
-	cache = diff --cached
+	cached = diff --cached
 	dt = difftool
-    mt = mergetool
+	mt = mergetool
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+	lga = lg --all
+	lg1 = "!git -P lg -1"
 	sm = submodule
+	sw = switch
 	bl = blame -c
+	rb = rebase
 	unstage = reset HEAD --
 	clear = "!git co -- . && git clean -df"
 [push]
@@ -35,3 +37,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[color]
+	ui = auto
+[oh-my-zsh]
+	hide-status = 1
