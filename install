@@ -46,4 +46,10 @@ local_plugins=()
 source \${RC_DIR}/zshrc.common
 EOT
 
+echo "Install vim vundle"
+git clone https://github.com/VundleVim/Vundle.vim.git ${RC_DIR}/vimrc/bundle/Vundle.vim
+echo "Linking ${RC_DIR}/vimrc" to .vim
+ln -sf "${RC_DIR}/vimrc" .vim
+vim +PluginInstall +qall
+
 echo "Install successfully. Please restart your zsh."
