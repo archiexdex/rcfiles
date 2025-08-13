@@ -18,7 +18,7 @@ set noswapfile
 syntax on
 set ruler
 set cursorline
-"set cursorcolumn
+set cursorcolumn
 set showmode    " Show mode on bottom-left
 set scrolloff=5 " keep at least 5 lines above/below
 set number      " Show line numbers
